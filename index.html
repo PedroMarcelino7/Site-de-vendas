@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de vendas</title>
+
+    <!-- FAVICON -->
+    <link rel="stylesheet" href="BOOTSTRAP - 5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jquery-3.6.3.js"></script>
+    <script src="javascript/script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="container-fluid">
+        <div class="container">
+
+            <!-- NAVBAR-->
+            <div class="row pt-2 px-0 px-md-5">
+
+                <div>
+                    <span class="subtitle">HOJE, </span>
+                    <strong>
+                        <span class="subtitle strong" id="current_date">
+                            <script>
+                                date = new Date();
+                                year = date.getFullYear();
+                                month = date.getMonth() + 1;
+                                day = date.getDate();
+                                document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year + ",";
+                            </script>
+                        </span>
+                    </strong>
+                    <span class="subtitle"> É O ÚLTIMO DIA PARA ASSISTIR ESSE VÍDEO!</span>
+                </div>
+                <!-- IMAGEM -->
+                <div class="pt-2">
+                    <h1>GANHOS AUTOMÁTICOS</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- DESKTOP -->
+        <section class="container py-5 d-none d-md-block">
+            <div class="py-3 px-1">
+                <div class="text-center">
+                    <p>Ex gerente comercial revela <strong>brecha criada de propósito pelos bancos</strong> que te paga todos os meses</p>
+                </div>
+
+                <div class="text-center">
+                    <span>7 minutos de duração</span>
+                </div>
+
+                <div class="text-center px-5 pt-2 pb-4">
+                    <div class="bg-video py-3 px-3">
+                        <img class="img-fluid" src="imagens/290-536x354.jpg" alt="VIDEO"> <!-- VIDEO -->
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a class="py-2 px-3 botao-compra2" href="">clique aqui para comprar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOBILE -->
+        <section class="container py-5 section-1 d-block d-md-none">
+            <div class="row py-3 px-2">
+                <div class="col-8 text-center p-0">
+                    <div class="bg-video py-3 px-3">
+                        <img class="img-fluid" src="imagens/290-536x354.jpg" alt="VIDEO"> <!-- VIDEO -->
+                    </div>
+                </div>
+
+                <div class="col-4 text-center pt-3">
+                    <p class="p-mobile"><img class="relogio" src="imagens/clock-fill.svg" alt=""><span> 7 minutos</span> de duração <br><br> Ex Gerente Comercial Revela <strong>Brecha Criada de Propósito pelos Bancos</strong> que Te
+                        Paga Todos os Meses. <br><br> <strong>Certifique-se de que o seu som está ligado.</strong>
+                    </p>
+
+                    <a class="py-1 px-2 botao-compra" href="">clique aqui para comprar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pt-3 pb-4">
+        <div class="pt-3 pb-1 px-3">
+            <p class="px-1 px-md-5"><span>Este site não é do facebook:</span> Este site não faz parte do site do Facebook ou do Facebook Inc.
+                Além disso, este site <span>não é endossado pelo Facebook de nenhuma maneira.</span> Facebook é uma
+                marca comercial independente da Facebook, Inc.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        $(".botao-compra").hide().delay(5000).fadeIn("slow")
+    </script>
+
+    <script>
+        $(".botao-compra2").hide().delay(5000).fadeIn("slow")
+    </script>
+</body>
+
+</html>
